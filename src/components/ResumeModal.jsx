@@ -56,30 +56,30 @@ PROJECTS:
         style={{ padding: '36px', maxWidth: '800px', width: '100%' }}
       >
         {/* Modal Controls Bar */}
-        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '24px', borderBottom: '1px solid rgba(255, 255, 255, 0.08)', paddingBottom: '16px' }}>
+        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '12px', marginBottom: '20px', borderBottom: '1px solid rgba(255, 255, 255, 0.08)', paddingBottom: '14px' }}>
           <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-            <span style={{ fontSize: '0.82rem', fontFamily: 'var(--font-mono)', color: '#38bdf8', fontWeight: 600 }}>
+            <span style={{ fontSize: '0.8rem', fontFamily: 'var(--font-mono)', color: '#38bdf8', fontWeight: 600 }}>
               RESUME DOCUMENT PREVIEW
             </span>
           </div>
 
-          <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '8px', flexWrap: 'wrap' }}>
             <button
               onClick={handleCopySummary}
               className="btn btn-outline"
-              style={{ padding: '6px 14px', fontSize: '0.8rem', gap: '6px' }}
+              style={{ padding: '6px 12px', fontSize: '0.78rem', gap: '5px' }}
             >
-              {copied ? <Check size={14} color="#10b981" /> : <Copy size={14} />}
+              {copied ? <Check size={13} color="#10b981" /> : <Copy size={13} />}
               <span>{copied ? 'Copied' : 'Copy Text'}</span>
             </button>
 
             <button
               onClick={handlePrint}
               className="btn btn-primary"
-              style={{ padding: '6px 14px', fontSize: '0.8rem', gap: '6px' }}
+              style={{ padding: '6px 12px', fontSize: '0.78rem', gap: '5px' }}
             >
-              <Printer size={14} />
-              <span>Print / Save PDF</span>
+              <Printer size={13} />
+              <span>Print / PDF</span>
             </button>
 
             <button
@@ -99,6 +99,7 @@ PROJECTS:
                 color: '#94a3b8',
                 cursor: 'pointer'
               }}
+              aria-label="Close modal"
             >
               <X size={16} />
             </button>
@@ -110,7 +111,7 @@ PROJECTS:
           background: '#090d15',
           border: '1px solid rgba(255, 255, 255, 0.08)',
           borderRadius: 'var(--radius-md)',
-          padding: '30px',
+          padding: '20px 16px',
           fontFamily: 'var(--font-main)'
         }}>
           {/* Header */}

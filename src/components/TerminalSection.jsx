@@ -233,6 +233,7 @@ Contact: 5012.sktbhavidi@gmail.com | +91 89884 40496`;
                 placeholder="type a command (e.g. skills, contact, hire)..."
                 style={{
                   flex: 1,
+                  minWidth: 0,
                   background: 'transparent',
                   border: 'none',
                   outline: 'none',
