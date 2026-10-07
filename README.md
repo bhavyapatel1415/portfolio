@@ -8,7 +8,7 @@ A high-performance, modern dark-themed portfolio engineered with React, Vite, an
 ---
 
 ## 🚀 Live Demo & Deployment
-- **GitHub Repository**: [https://github.com/PSG72-cmd/portfolio](https://github.com/PSG72-cmd/portfolio)
+- **GitHub Repository**: [https://github.com/bhavyapatel1415/portfolio](https://github.com/bhavyapatel1415/portfolio)
 - **Deployment Platform**: Ready for **Vercel** / **Netlify** (configured with `vercel.json` and zero-config build).
 
 ---
